@@ -127,7 +127,7 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({
                     minWidth: '120px',
                   }}
                 >
-                  <div className="relative w-full h-24 md:h-32 lg:h-40 flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300">
+                  <div className="relative w-full h-24 md:h-32 lg:h-40 flex items-center justify-center  hover:scale-105 transition-transform duration-300">
                     <Image
                       src={logo.src}
                       alt={logo.alt}
