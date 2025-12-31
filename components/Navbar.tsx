@@ -60,7 +60,7 @@ const Navbar = () => {
                 { name: "PORTFOLIO",href:"/portfolio" },
                 { name: "NEWS", href: "/news" },
                 { name: "BLOGS", href: "/blog" },
-                { name: "CONTACT US", href: "/blog" },
+                { name: "CONTACT US", href: "/contact-us" },
               ].map((item) => (
                 <Link
                   key={item.name}
@@ -133,7 +133,7 @@ const Navbar = () => {
                 { name: "PORTFOLIO",href:"/portfolio" },
                 { name: "NEWS", href: "/news" },
                 { name: "BLOGS", href: "/blog" },
-                { name: "CONTACT US", href: "/blog" },
+                { name: "CONTACT US", href: "/contact-us" },
                 ].map((item, idx) => (
                   <Link
                     key={item.name}
