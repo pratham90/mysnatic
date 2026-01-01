@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link"
 
+
 const Home = () => {
   return (
   <main className="relative min-h-screen flex flex-col bg-white overflow-x-hidden">
@@ -30,7 +31,17 @@ const Home = () => {
             <Link href="/services" className="px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-[#0a1a3a] transition font-medium text-base">Explore Our Services</Link>
             <div className="flex gap-4 mt-2 sm:mt-0">
               <a href="#" aria-label="Instagram" className="hover:text-blue-400 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+               <svg
+                    className="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="18" height="18" x="3" y="3" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17" cy="7" r="1.5" />
+                  </svg>
               </a>
               <a href="#" aria-label="Facebook" className="hover:text-blue-400 text-white">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
