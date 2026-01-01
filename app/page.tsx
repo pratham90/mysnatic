@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link"
 
 const Home = () => {
   return (
@@ -18,19 +19,18 @@ const Home = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
         <div className="relative z-20 w-full max-w-337 mx-auto px-4 md:px-5 lg:px-8  flex flex-col gap-6 items-center md:items-start">
-          <h1 className="text-white font-bold text-3xl text-center md:text-left sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-tight" style={{fontFamily: 'Orbitron, sans-serif'}}>FUELING THE FUTURE<br className="hidden sm:block"/> OF SPORTS</h1>
+          <h1 className="text-white font-bold text-3xl text-center md:text-left sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-tight" style={{fontFamily: 'Orbitron, sans-serif'}}>Where Talent Becomes <br className="hidden sm:block"/> Legacy.</h1>
           <p className="text-gray-200 text-base md:text-lg max-w-xl text-center md:text-left">
-            We are a next-generation sports marketing agency empowering brands, leagues, and events through creativity, strategy, and measurable impact.
+          Mysnatic transforms athletes, teams, and sports properties into global powerhouses—on and off the field.
+          <p className="text-[#EC5B19]">Trusted by top leagues, athletes, and brands across India.</p>
           </p>
+          
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-2">
-            <a href="#" className="px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-[#0a1a3a] transition font-medium text-base">Explore Our Work</a>
+            <Link href="/" className="px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-[#0a1a3a] transition font-medium text-base">Start Your Journey</Link>
+            <Link href="/services" className="px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-[#0a1a3a] transition font-medium text-base">Explore Our Services</Link>
             <div className="flex gap-4 mt-2 sm:mt-0">
               <a href="#" aria-label="Instagram" className="hover:text-blue-400 text-white">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <rect width="18" height="18" x="3" y="3" rx="5"/>
-                  <circle cx="12" cy="12" r="4"/>
-                  <circle cx="17" cy="7" r="1.5"/>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </a>
               <a href="#" aria-label="Facebook" className="hover:text-blue-400 text-white">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -61,17 +61,19 @@ const Home = () => {
         <div className="max-w-337 w-full flex flex-col md:items-start items-center px-5">
           <h2 className="text-2xl md:text-5xl font-semibold mb-2 md:text-left text-center text-gray-400">
             <span className="text-[#2563eb]">Mysnatic</span> Sports
+            <p className="text-lg md:text-xl">Redefining Sports. Reimagining Careers.</p>
           </h2>
           <p className="text-gray-700 md:text-left text-center max-w-2xl mb-1 text-sm md:text-base">
             We believe, every moment in sport is an opportunity to inspire, engage, and build lasting connections.
           </p>
           <p className="text-gray-700 md:text-left text-center max-w-2xl mb-1 text-sm md:text-base">
-            We merge <span className="font-semibold">creativity with strategy, emotion with analytics, and passion with purpose</span> — helping brands amplify their presence and leave a mark that lasts beyond the game.
+          Mysnatic isn’t just a sports management company—it’s a movement.
+          We are strategists, storytellers, and innovators turning raw talent into global icons and transforming leagues into unforgettable experiences.
           </p>
           <p className="text-gray-700 md:text-left text-center max-w-2xl mb-1 text-sm md:text-base">
-            From sponsorship management to digital storytelling, from live activations to influencer-driven content — Mysnatic Sports is not just a marketing agency, it’s <span className="italic font-semibold">a movement shaping India’s new sports economy.</span>
+          From grassroots athletes to professional teams, we build journeys that inspire, engage, and elevate.
           </p>
-          <a href="#" className="mt-2 mb-8 text-sm font-medium text-black underline underline-offset-4 hover:text-[#2563eb] transition">Read more →</a>
+          <Link href="/about-us" className="mt-2 mb-8 text-sm font-medium text-black underline underline-offset-4 hover:text-[#2563eb] transition">Discover Our Story</Link>
         </div>
         <div className="w-full max-w-337 mt-4 sm:px-4 px-2">
           <h3 className="text-xl md:text-4xl lg:text-5xl font-semibold mb-6 md:text-left text-center text-gray-400">Our Expertise</h3>

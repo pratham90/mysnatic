@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? 'bg-transparent backdrop-blur-md shadow-md' : 'bg-transparent'
+          scrolled ? 'color-secondary backdrop-blur-md shadow-md' : 'bg-transparent'
         }`}
         aria-label="Main Navigation"
       >
@@ -43,11 +43,11 @@ const Navbar = () => {
             {/* Logo always left */}
             <Link href="/" className="font-bold text-xl text-white hover:text-blue-400 transition-colors duration-300 shrink-0">
               <Image
-                src="/homeBanner.jpg"
+                src="/logo.png"
                 alt="Mysnatic"
                 width={120}
-                height={40}
-                className="h-10 sm:h-9 md:h-10 lg:h-11 w-auto"
+                height={140}
+                className="h-30 w-auto"
                 priority
               />
             </Link>
@@ -102,16 +102,16 @@ const Navbar = () => {
           style={{ pointerEvents: open ? 'auto' : 'none', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}
         >
           <div className="w-full h-full flex items-start mt-30 justify-center mx-2">
-            <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl border py-2 border-gray-200 flex flex-col transition-transform duration-300 ease-out  overflow-y-auto">
-              <div className="flex items-center justify-between h-8 px-4 border-b border-gray-100 rounded-t-2xl bg-white/90">
+            <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl border  border-gray-200 flex flex-col transition-transform duration-300 ease-out  overflow-y-auto">
+              <div className="flex items-center justify-between h-15 px-4 border-b border-gray-100 rounded-t-2xl bg-black">
                 {/* Logo left in menu */}
                 <Link href="/" className="shrink-0" onClick={closeMenu}>
                   <Image
-                    src="/homeBanner.jpg"
+                    src="/logo.png"
                     alt="Mysnatic Logo"
                     width={95}
                     height={32}
-                    className="h-7 w-auto text-black"
+                    className="h-25 w-auto text-black"
                     priority
                   />
                 </Link>
@@ -121,8 +121,8 @@ const Navbar = () => {
                   onClick={closeMenu}
                   aria-label="Close menu"
                 >
-                  <span className="block w-6 h-0.5 bg-black rotate-45 absolute"></span>
-                  <span className="block w-6 h-0.5 bg-black -rotate-45 absolute"></span>
+                  <span className="block w-6 h-0.5 bg-white rotate-45 absolute"></span>
+                  <span className="block w-6 h-0.5 bg-white -rotate-45 absolute"></span>
                   <span className="sr-only">Close</span>
                 </button>
               </div>

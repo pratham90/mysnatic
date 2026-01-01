@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
-            <img src="/homeBanner.jpg" alt="MYSNATIC SPORTS" className="h-14 mb-4" />
+            <img src="/logo.png" alt="MYSNATIC SPORTS" className="h-30 mb-4" />
             <p className="text-gray-300 text-sm max-w-xs">
               Our in-depth domain knowledge and collective experience make us
               specialists in sports marketing, entertainment and brand
@@ -167,27 +168,27 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-6 text-sm">
-          <a href="#" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-blue-500">
             HOME
-          </a>
-          <a href="#" className="text-blue-500 font-semibold">
+          </Link>
+          <Link href="/about-us" className="hover:text-blue-500 font-semibold">
             ABOUT US
-          </a>
-          <a href="#" className="hover:text-blue-500">
+          </Link>
+          <Link href="/services" className="hover:text-blue-500">
             SERVICE
-          </a>
-          <a href="#" className="hover:text-blue-500">
+          </Link>
+          <Link href="/portfolio" className="hover:text-blue-500">
             PORTFOLIO
-          </a>
-          <a href="#" className="hover:text-blue-500">
+          </Link>
+          <Link href="/news" className="hover:text-blue-500">
             NEWS
-          </a>
-          <a href="#" className="hover:text-blue-500">
+          </Link>
+          <Link href="/blog" className="hover:text-blue-500">
             BLOGS
-          </a>
-          <a href="#" className="hover:text-blue-500">
+          </Link>
+          <Link href="/contact-us" className="hover:text-blue-500">
             CONTACT US
-          </a>
+          </Link>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row md:justify-between items-center text-xs text-gray-400">
