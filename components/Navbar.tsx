@@ -47,7 +47,7 @@ const Navbar = () => {
                 alt="Mysnatic"
                 width={120}
                 height={140}
-                className="h-20 w-auto"
+                className="h-16 w-auto"
                 priority
               />
             </Link>
