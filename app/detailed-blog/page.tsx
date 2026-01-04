@@ -8,7 +8,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 const page = () => {
   return (
     <main className="flex flex-col min-h-screen bg-white overflow-x-hidden">
-      <section className="relative w-full h-80 md:h-110 flex items-center justify-center">
+      <section className="relative w-full h-80 md:h-120 flex items-end justify-center">
         <Navbar />
         <Image
           src="/homeBanner.jpg"
@@ -19,11 +19,8 @@ const page = () => {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
-        <div className="relative z-20 w-full max-w-[1350px]  px-4 md:px-5 lg:px-8 flex flex-col gap-6 items-center justify-center ">
-          <h1
-            className="text-white font-bold text-3xl sm:text-left text-center sm:text-4xl md:text-5xl lg:text-6xl mt-8 tracking-widest leading-tight"
-            style={{ fontFamily: "Orbitron, sans-serif" }}
-          >
+        <div className="relative z-20 w-full max-w-[1350px]  px-4 md:px-5 lg:px-8 flex flex-col mb-12 gap-6 items-center justify-center ">
+          <h1 className="text-white font-bold font-mokoto text-3xl sm:text-left text-center sm:text-4xl md:text-5xl lg:text-6xl mt-8 tracking-widest leading-tight">
             HOW SPORTS MAKRKETINGIS SHIFTING FROM SPONSORSHIP TO STORYTELLING
           </h1>
         </div>
@@ -37,7 +34,7 @@ const page = () => {
 
           <div className="px-4 md:px-8 lg:px-0">
          
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#2563eb] mb-6 md:mb-8 text-center md:text-left leading-tight">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl color-primary mb-6 md:mb-8 text-center md:text-left leading-tight">
               Why engagement beats exposure, and how brands must now play on emotion, not just logos.
             </h1>
 
@@ -45,11 +42,11 @@ const page = () => {
             <div className="space-y-4 md:space-y-5 mb-6 md:mb-8 text-center md:text-left">
               <p className="text-base md:text-lg lg:text-xl text-black leading-relaxed">
                 Sports marketing has evolved far beyond slapping a logo on a jersey. Today&apos;s brands understand that fans don&apos;t just watch sports—they feel them. The shift is from exposure to connection, from visibility to belonging. It&apos;s about stories of passion, perseverance, and the moments that unite us, not just the products we sell.
-              </p>
-              <p className="text-base md:text-lg lg:text-xl text-black leading-relaxed">
+            
                 Modern sports marketing isn&apos;t about showing up—it&apos;s about participating. Audiences want to see your values in action. They want to know how your brand empowers athletes, supports communities, and stands for something bigger than sales. The campaigns that win aren&apos;t the loudest; they&apos;re the ones that resonate.
-              </p>
-              <p className="text-base md:text-lg lg:text-xl text-black leading-relaxed">
+             
+                Sports marketing has evolved far beyond slapping a logo on a jersey. Today&apos;s brands understand that fans don&apos;t just watch sports—they feel them. The shift is from exposure to connection, from visibility to belonging. It&apos;s about stories of passion, perseverance, and the moments that unite us, not just the products we sell.
+            
                 Look at Nike&apos;s &quot;You Can&apos;t Stop Us&quot; or Dream11&apos;s fan humor—these brands sell emotion, not features. They understand that storytelling builds memory, and memory builds loyalty. In a world where attention is scarce, the brands that make us feel something are the ones we remember.
               </p>
             </div>
@@ -119,7 +116,9 @@ const page = () => {
              
                </div>
                <div >
+                <Link href="/blog">
         <BsArrowLeft className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-black font-extrabold hover:scale-110 transition cursor-pointer' />
+        </Link>
         </div>
               </div>
             </div>

@@ -18,10 +18,7 @@ const page = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
         <div className="relative z-20 w-full max-w-[1350px] mx-auto px-4 md:px-5 lg:px-8 flex flex-col gap-6 items-center justify-center">
-          <h1
-            className="text-white font-bold text-3xl text-center sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-tight"
-            style={{ fontFamily: "Orbitron, sans-serif" }}
-          >
+          <h1 className="text-white font-bold font-mokoto text-3xl text-center sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-tight">
             CONTACT US
           </h1>
         </div>
@@ -32,10 +29,10 @@ const page = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-8 md:mb-12">
-            <p className="color-primary text-sm md:text-base font-medium mb-2">
+            <p className="color-primary text-sm md:text-4xl font-medium mb-2">
               CONTACT
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl  text-[#1a1a1a] mb-4">
               GET IN TOUCH WITH US
             </h2>
             <p className="text-gray-500 text-base md:text-lg">

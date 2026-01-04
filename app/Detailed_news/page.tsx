@@ -2,35 +2,38 @@ import Navbar from "@/components/Navbar"
 import Image from "next/image"
 import Footer from "@/components/Footer"
 import "../globals.css"
+import Link from "next/link"
 
 const page = () => {
   return (
     <main className="flex flex-col min-h-screen gap-8 md:gap-12 lg:gap-16 bg-white overflow-x-hidden">
     
-    <section className="relative w-full h-80 md:h-[440px] flex items-center">
-            <Navbar />
-            <Image
-              src="/homeBanner.jpg"
-              alt="Home Banner"
-              fill
-              className="object-cover z-0"  
-              priority
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
-            <div className="absolute z-20 w-full max-w-[1350px] px-4 md:px-5 lg:px-8 flex flex-col gap-1 md:items-start items-center">
-              <h1 className="text-white font-bold text-3xl text-center md:text-left sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight max-w-2xl" style={{fontFamily: 'Orbitron, sans-serif'}}>LOREM EPSUM AS</h1>
-              <div className="flex justify-evenly gap-4">
-                <p>Author name</p>
-                <p>published on 16 Aug</p>
-              </div>
-            </div>
-          </section>
+ <section className="relative w-full h-80 md:h-110 flex items-center justify-center">
+        <Navbar />
+        <Image
+          src="/homeBanner.jpg"
+          alt="Home Banner"
+          fill
+          className="object-cover z-0"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
+        <div className="relative z-20 w-full max-w-[1350px]  px-4 md:px-5 lg:px-8 flex flex-col gap-6 md:items-start items-center justify-center ">
+          <h1 className="text-white font-bold font-mokoto text-3xl sm:text-left text-center sm:text-4xl md:text-5xl lg:text-6xl mt-8 tracking-widest leading-tight">
+            Lorem ipsum dolor sit amet
+          </h1>
+          <div className="text-xl flex gap-10" >
+          <p >Author</p>
+          <span>Published on</span>
+          </div>
+        </div>
+      </section>
           
           <section className="w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
            
             <div className="text-sm text-gray-700 mb-4 text-center md:text-left">
-              Home &gt; Topic1 &gt; <span className="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+             <Link href="/"> Home</Link> &gt; <Link href="/news">topic1</Link> &gt; <span className="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div>
             
         
