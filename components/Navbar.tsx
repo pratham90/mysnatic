@@ -112,7 +112,7 @@ const Navbar = () => {
                     alt="Mysnatic Logo"
                     width={95}
                     height={32}
-                    className="h-25 w-auto text-black"
+                    className="h-15 w-auto text-black"
                     priority
                   />
                 </Link>
