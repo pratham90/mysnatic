@@ -22,7 +22,7 @@ const Home = () => {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a3a]/80 to-[#0a1a3a]/60 z-10" />
-        <div className="relative  z-20 w-full mb-8 max-w-337 mx-auto px-4 md:px-5 lg:px-8  flex flex-col gap-6 items-center md:items-start">
+        <div className="relative  z-20 w-full mb-8 max-w-337 mx-auto px-4 md:px-5 lg:px-8 pt-20 flex flex-col gap-6 items-center md:items-start">
           <h1 className="text-white font-bold text-3xl text-center md:text-left sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-tight font-mokoto">Where Talent Becomes <br className="hidden sm:block"/> Legacy</h1>
 
           <p className="text-gray-200 text-base md:text-lg max-w-xl text-center md:text-left">
