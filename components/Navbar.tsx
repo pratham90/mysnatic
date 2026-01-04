@@ -47,7 +47,7 @@ const Navbar = () => {
                 alt="Mysnatic"
                 width={120}
                 height={140}
-                className="h-30 w-auto"
+                className="h-20 w-auto"
                 priority
               />
             </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
                     alt="Mysnatic Logo"
                     width={95}
                     height={32}
-                    className="h-15 w-auto text-black"
+                    className="h-13 w-auto text-black"
                     priority
                   />
                 </Link>
